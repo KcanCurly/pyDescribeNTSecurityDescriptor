@@ -2550,8 +2550,7 @@ def parseArgs():
 
     return options
 
-
-if __name__ == "__main__":
+def main():
     options = parseArgs()
 
     ls = None
@@ -2644,3 +2643,7 @@ if __name__ == "__main__":
         if options.summary or options.verbose:
             print("\n" + "==[Summary]".ljust(80,'=') + "\n")
             HumanDescriber(ntsd=ntsd).summary()
+
+
+if __name__ == "__main__":
+    main()
